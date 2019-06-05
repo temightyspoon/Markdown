@@ -22,9 +22,9 @@
 ##### Overview
 <br>
 ##### Create New User <br>
-Create another user and add them to the Sudo Group <br>
-`sudo adduser Username` <br>
-`sudo usermod -aG sudo Username`<br>
+Create another user and add them to the Sudo Group
+`sudo adduser Username`
+`sudo usermod -aG sudo Username` 
 Check you can login via ssh with this new user <br>
 
 ##### Setup Key Based Logon
