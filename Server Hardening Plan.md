@@ -29,6 +29,6 @@ Open /etc/ssh/sshd_config and change "PermitRootLogon" to no
 ##### Setup Key Based Logon
 Create a new key pair on your local machine
 `sudo ssh-keygen`<br>
-![ssh keygen image](\images\ssh_keygen.png)<br>
+![ssh keygen image](/images/ssh_keygen.png)<br>
 Copy the key to the server<br>
 `ssh-copy-id user@hostname`
