@@ -22,21 +22,21 @@
 ##### Overview
 <br>
 ##### Create New User <br>
-Create another user and add them to the Sudo Group
-`sudo adduser Username` <br>
-`sudo usermod -aG sudo Username` <br>
-Check you can login via ssh with this new user <br>
+Create another user and add them to the Sudo Group  
+`sudo adduser Username`
+`sudo usermod -aG sudo Username`
+Check you can login via ssh with this new user  
 
 ##### Setup Key Based Logon
-Create a new key pair on your local machine<br>
-`sudo ssh-keygen` <br>
-![ssh keygen image](/images/ssh_keygen.png) <br>
-Copy the key to the server
+Create a new key pair on your local machine  
+`sudo ssh-keygen`  
+![ssh keygen image](/images/ssh_keygen.png)  
+Copy the key to the server  
 `ssh-copy-id -i "keyname" user@hostname`  
 Test you can logon using the new key
 
 ##### Edit The Ssh Config File
-Open /etc/ssh/sshd_config and change the configuration within
+Open /etc/ssh/sshd_config and change the configuration within  
 `sudo nano /etc/ssh/sshd_config`
 
 Change the following lines
@@ -59,10 +59,10 @@ Change the following lines
 
 <br>
 ##### Setup Email Alerts for logon
-Install 'mailx' package
-`sudo apt install mailx`
-Open the .bashrc file
-`sudo nano -w /root/.bashrc
-Add this to the end of the file
+Install 'mailx' package  
+`sudo apt install mailx`  
+Open the .bashrc file  
+`sudo nano -w /root/.bashrc  
+Add this to the end of the file  
 <pre>echo 'ALERT - Root Shell Access (ServerName) on:' `date` `who` | mail -s
 "Alert: Root Access from `who | cut -d'(' -f2 | cut -d')' -f1`" your@email.com </pre>
