@@ -1,4 +1,4 @@
-# erver Hardening Plan
+# Server Hardening Plan
 
 ### Index
 - Overview
