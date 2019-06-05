@@ -18,8 +18,8 @@
 - Enable and Configure Fail2Ban
 <br><br>
 ##### Create New User
-Create another user and add them to the Sudo Group
-`sudo adduser "Username"`
+Create another user and add them to the Sudo Group<br>
+`sudo adduser "Username"`<br>
 `sudo usermod -aG sudo "Username"`
 
 ##### Disable Root Logon
