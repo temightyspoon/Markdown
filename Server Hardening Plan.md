@@ -5,7 +5,7 @@
 ##### Steps to Take
 - [Create a New User](#create-new-user)
 - [Disable Root Logon](#disable-root-logon)
-- Enable Key Based Logon
+- [Setup Key Based Logon](#setup-key-based-logon)
 - Disable Password Based Logon
 - Change SSH Port
 - Limit SSH to certain Users
@@ -18,10 +18,17 @@
 - Enable and Configure Fail2Ban
 <br><br>
 ##### Create New User
-Create another user and add them to the Sudo Group<br>
-`sudo adduser "Username"`<br>
+Create another user and add them to the Sudo Group
+`sudo adduser "Username"` 
 `sudo usermod -aG sudo "Username"`
 
 ##### Disable Root Logon
 Open /etc/ssh/sshd_config and change "PermitRootLogon" to no
 (picture)
+
+##### Setup Key Based Logon
+Create a new key pair on your local machine
+`sudo ssh-keygen`
+![ssh keygen image](\images\ssh_keygen.png)
+Copy the key to the server
+`ssh-copy-id user@hostname`
