@@ -32,7 +32,7 @@ Create a new key pair on your local machine<br>
 `sudo ssh-keygen` <br>
 ![ssh keygen image](/images/ssh_keygen.png) <br>
 Copy the key to the server
-`ssh-copy-id -i "keyname" user@hostname`
+`ssh-copy-id -i "keyname" user@hostname`  
 Test you can logon using the new key
 
 ##### Edit The Ssh Config File
