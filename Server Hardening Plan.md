@@ -20,8 +20,8 @@
 - Enable and Configure Fail2Ban
   <br><br>
 ##### Overview
-<br>
-##### Create New User <br>
+
+##### Create New User
 Create another user and add them to the Sudo Group  
 `sudo adduser Username`
 `sudo usermod -aG sudo Username`
